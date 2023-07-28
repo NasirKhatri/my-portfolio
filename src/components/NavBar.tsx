@@ -50,7 +50,7 @@ export default function DrawerAppBar(props: Props) {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.title} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton sx={{ textAlign: 'center' }} href={item.href}>
                             <ListItemText primary={item.title} />
                         </ListItemButton>
                     </ListItem>
@@ -75,16 +75,24 @@ export default function DrawerAppBar(props: Props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
+                    {!mobileOpen && <Typography
                         variant="h5"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'block' } }}
                     >
                         Muhammad Nasir
-                    </Typography>
-                    <Box sx={{ display: { sm: 'none', md: 'block' } }}>
+                    </Typography> }
+                    <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item.title} sx={{ color: '#fff' }}>
+                            <Button
+                                key={item.title}
+                                sx={{
+                                    color: '#fff', '&:hover': {
+                                        backgroundColor: '#fff',
+                                        color: '#3c52b2',
+                                    }
+                                }}
+                                href={item.href}>
                                 {item.title}
                             </Button>
                         ))}
