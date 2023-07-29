@@ -5,24 +5,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Box, Toolbar } from '@mui/material'
 import DrawerAppBar from '@/components/NavBar'
-
-
-import { createStyles, makeStyles } from '@mui/styles';
-import { createTheme, Theme, ThemeProvider } from '@mui/material/styles';
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-
-  }),
-);
-
-const theme = createTheme({
-  palette: {
-     primary: {
-        main: '#1976d2',
-     },
-  },
-});
+import { ThemeProvider } from "@mui/material";
+import theme from './theme'
 
 const inter = Inter({ subsets: ['latin'] })
 

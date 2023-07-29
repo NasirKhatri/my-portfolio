@@ -22,7 +22,7 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Avatar } from '@mui/material';
+import { Avatar, Tooltip } from '@mui/material';
 
 interface Props {
     /**
@@ -34,13 +34,13 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
-    { title: "Home", href: "/", icon: <HomeIcon/> },
-    { title: "About", href: "/about", icon: <PersonIcon/> },
-    { title: "Skills", href: "/skills", icon: <ConstructionIcon/> },
-    { title: "Education", href: "/education", icon: <SchoolIcon/> },
-    { title: "Projects", href: "/projects", icon: <AssignmentIcon/> },
-    { title: "Experience", href: "/experience", icon: <WorkOutlineIcon/> },
-    { title: "Contact", href: "/contact", icon: <CallIcon/> },
+    { title: "Home", href: "/", icon: <HomeIcon /> },
+    { title: "About", href: "/about", icon: <PersonIcon /> },
+    { title: "Skills", href: "/skills", icon: <ConstructionIcon /> },
+    { title: "Education", href: "/education", icon: <SchoolIcon /> },
+    { title: "Projects", href: "/projects", icon: <AssignmentIcon /> },
+    { title: "Experience", href: "/experience", icon: <WorkOutlineIcon /> },
+    { title: "Contact", href: "/contact", icon: <CallIcon /> },
 ];
 
 export default function DrawerAppBar(props: Props) {
@@ -88,30 +88,24 @@ export default function DrawerAppBar(props: Props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { md: 'none' } }}
+                        sx={{ mr: 2}}
                     >
                         <MenuIcon />
                     </IconButton>
-                    {!mobileOpen && <Typography
+                    <Typography
                         variant="h5"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'block' } }}
                     >
-                        Muhammad Nasir
-                    </Typography>}
+                        {!mobileOpen && "Muhammad Nasir" }
+                    </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button
-                                key={item.title}
-                                sx={{
-                                    color: '#fff', '&:hover': {
-                                        backgroundColor: '#fff',
-                                        color: '#3c52b2',
-                                    }
-                                }}
-                                href={item.href}>
-                                {item.title}
-                            </Button>
+                            <Tooltip title={item.title}>
+                            <IconButton key={item.title} size='large' color='secondary' href={item.href}>
+                                {item.icon}
+                            </IconButton>
+                            </Tooltip>
                         ))}
                     </Box>
                 </Toolbar>
@@ -126,7 +120,7 @@ export default function DrawerAppBar(props: Props) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { sm: 'block', md: 'none' },
+                        display: "block",
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
