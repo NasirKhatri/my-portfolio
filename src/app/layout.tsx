@@ -6,6 +6,24 @@ import { Inter } from 'next/font/google'
 import { Box, Toolbar } from '@mui/material'
 import DrawerAppBar from '@/components/NavBar'
 
+
+import { createStyles, makeStyles } from '@mui/styles';
+import { createTheme, Theme, ThemeProvider } from '@mui/material/styles';
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+
+  }),
+);
+
+const theme = createTheme({
+  palette: {
+     primary: {
+        main: '#1976d2',
+     },
+  },
+});
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -18,17 +36,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  //const classes = useStyles();
+
   return (
     <html lang="en">
-      <body>
-        <Box sx={{ height: "100vh", display: "flex", flexDirection: 'column' }}>
-          <DrawerAppBar />
-          <Toolbar />
-          <Box sx={{ flexGrow: 1 }}>
-            {children}
+      <ThemeProvider theme={theme}>
+        <body>
+          <Box sx={{ height: "100vh", display: "flex", flexDirection: 'column' }}>
+            <DrawerAppBar />
+            <Toolbar />
+            <Box sx={{ flexGrow: 1 }}>
+              {children}
+            </Box>
           </Box>
-        </Box>
-      </body>
+        </body>
+      </ThemeProvider>
     </html>
   )
 }
