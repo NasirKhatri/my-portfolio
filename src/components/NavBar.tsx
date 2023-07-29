@@ -9,10 +9,20 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
 import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import CallIcon from '@mui/icons-material/Call';
+import SchoolIcon from '@mui/icons-material/School';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import AssignmentIcon from '@mui/icons-material/Assignment'; // Projects
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Avatar } from '@mui/material';
 
 interface Props {
     /**
@@ -24,13 +34,13 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Skills", href: "/skills" },
-    { title: "Education", href: "/education" },
-    { title: "Projects", href: "/projects" },
-    { title: "Experience", href: "/experience" },
-    { title: "Contact", href: "/contact" },
+    { title: "Home", href: "/", icon: <HomeIcon/> },
+    { title: "About", href: "/about", icon: <PersonIcon/> },
+    { title: "Skills", href: "/skills", icon: <ConstructionIcon/> },
+    { title: "Education", href: "/education", icon: <SchoolIcon/> },
+    { title: "Projects", href: "/projects", icon: <AssignmentIcon/> },
+    { title: "Experience", href: "/experience", icon: <WorkOutlineIcon/> },
+    { title: "Contact", href: "/contact", icon: <CallIcon/> },
 ];
 
 export default function DrawerAppBar(props: Props) {
@@ -42,17 +52,24 @@ export default function DrawerAppBar(props: Props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h5" sx={{ my: 2 }}>
-                Muhammad Nasir
-            </Typography>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left', display: "flex", flexDirection: "column", height: "100vh" }}>
+            <Box sx={{ display: "flex", flexDirection: "column", py: "30px", px: "15px", backgroundColor: "#1565c0" }}>
+                <Avatar src="/../../public/IMG_20210816_130455.jpg" />
+                <Typography variant="h5" sx={{ color: "white", fontWeight: "bold", mt: "15px" }}>
+                    Muhammad Nasir
+                </Typography>
+            </Box>
             <Divider />
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.title} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }} href={item.href}>
+                        <ListItemButton sx={{ textAlign: 'left' }} href={item.href}>
+                            <ListItemIcon>
+                                {item.icon}
+                            </ListItemIcon>
                             <ListItemText primary={item.title} />
                         </ListItemButton>
+                        <Divider />
                     </ListItem>
                 ))}
             </List>
@@ -81,7 +98,7 @@ export default function DrawerAppBar(props: Props) {
                         sx={{ flexGrow: 1, display: { xs: 'block' } }}
                     >
                         Muhammad Nasir
-                    </Typography> }
+                    </Typography>}
                     <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
                             <Button

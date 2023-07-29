@@ -1,0 +1,78 @@
+{ "skills": [
+    {
+        "scope": "Front End",
+        "languages": [
+            {
+                "name": "ReactJS",
+                "experience": "2 Years",
+                "Projects": "1 Project",
+                "Level": 4
+            },
+            {
+                "name": "React Native",
+                "experience": "2 Years",
+                "Projects": "1 Project",
+                "Level": 3.5
+            },
+            {
+                "name": "NextJS",
+                "experience": "4 Months",
+                "Projects": "1 Project",
+                "Level": 2
+            }
+        ]
+    },
+    {
+        "scope": "Back End",
+        "languages": [
+            {
+                "name": "NodeJS",
+                "experience": "2 Years",
+                "Projects": "2 Projects",
+                "Level": 3
+            },
+            {
+                "name": "ExpressJS",
+                "experience": "2 Years",
+                "Projects": "1 Project",
+                "Level": 3.5
+            },
+            {
+                "name": "MongoDB",
+                "experience": "3 Months",
+                "Projects": "1 Project",
+                "Level": 2
+            },
+            {
+                "name": "MySQL",
+                "experience": "1 year",
+                "Projects": "1 Project",
+                "Level": 2.5
+            }
+        ]
+    },
+    {
+        "scope": "Libraries",
+        "languages": [
+            {
+                "name": "Material UI",
+                "experience": "1 Year",
+                "Projects": "1 Projects",
+                "Level": 2.5
+            },
+            {
+                "name": "Formik and Yup",
+                "experience": "2 Years",
+                "Projects": "2 Projects",
+                "Level": 3
+            },
+            {
+                "name": "Mongoose",
+                "experience": "3 Months",
+                "Projects": "1 Project",
+                "Level": 2
+            }
+        ]
+    }
+]
+}
