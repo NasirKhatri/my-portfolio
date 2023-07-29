@@ -12,7 +12,7 @@ const SkillCard = ({data}: any) => {
                     {
                         data.languages.map((lang: any) => (
                             <>
-                            <Divider sx={{p: "8px"}}/>
+                            <Divider sx={{p: "8px", marginBottom: "8px"}}/>
                             <Typography variant='h6' sx={{fontWeight: "bold"}}>{lang.name}</Typography>
                             <Typography variant='body1'>Experience: {lang.experience} {lang.Projects}</Typography>
                             <Typography variant='body1'>Level: {lang.Level}</Typography>
