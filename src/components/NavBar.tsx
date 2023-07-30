@@ -19,6 +19,8 @@ import ConstructionIcon from '@mui/icons-material/Construction';
 import AssignmentIcon from '@mui/icons-material/Assignment'; // Projects
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 
+import Image from 'next/image';
+
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -34,10 +36,10 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
-    { title: "Home", href: "/", icon: <HomeIcon/> },
-    { title: "About", href: "/about", icon: <PersonIcon/> },
-    { title: "Skills", href: "/skills", icon: <ConstructionIcon/> },
-    { title: "Education", href: "/education", icon: <SchoolIcon/> },
+    { title: "Home", href: "/", icon: <HomeIcon /> },
+    { title: "About", href: "/about", icon: <PersonIcon /> },
+    { title: "Skills", href: "/skills", icon: <ConstructionIcon /> },
+    { title: "Education", href: "/education", icon: <SchoolIcon /> },
     { title: "Projects", href: "/projects", icon: <AssignmentIcon /> },
     { title: "Experience", href: "/experience", icon: <WorkOutlineIcon /> },
     { title: "Contact", href: "/contact", icon: <CallIcon /> },
@@ -54,7 +56,13 @@ export default function DrawerAppBar(props: Props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left', display: "flex", flexDirection: "column", height: "100vh" }}>
             <Box sx={{ display: "flex", flexDirection: "column", py: "30px", px: "15px", backgroundColor: "primary.main" }}>
-                <Avatar src="/my-portfolio/public/muhammadNasir.jpg" />
+                <Avatar>
+                    <Image
+                        src="/../public/muhammadNasir.jpg"
+                        alt="my pic"
+                        fill
+                    />
+                </Avatar>
                 <Typography variant="h5" sx={{ color: "white", fontWeight: "bold", mt: "15px" }}>
                     Muhammad Nasir
                 </Typography>
@@ -62,7 +70,7 @@ export default function DrawerAppBar(props: Props) {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.title} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'left'}} href={item.href}>
+                        <ListItemButton sx={{ textAlign: 'left' }} href={item.href}>
                             <ListItemIcon>
                                 {item.icon}
                             </ListItemIcon>
@@ -86,7 +94,7 @@ export default function DrawerAppBar(props: Props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2}}
+                        sx={{ mr: 2 }}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -95,14 +103,14 @@ export default function DrawerAppBar(props: Props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'block' } }}
                     >
-                        {!mobileOpen && "Muhammad Nasir" }
+                        {!mobileOpen && "Muhammad Nasir"}
                     </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
                             <Tooltip title={item.title}>
-                            <IconButton key={item.title} size='large' color='secondary' href={item.href}>
-                                {item.icon}
-                            </IconButton>
+                                <IconButton key={item.title} size='large' color='secondary' href={item.href}>
+                                    {item.icon}
+                                </IconButton>
                             </Tooltip>
                         ))}
                     </Box>

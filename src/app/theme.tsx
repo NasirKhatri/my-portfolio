@@ -32,7 +32,14 @@ const theme = createTheme({
             textAlign: "justify",
          }
       }
-   }
+   },
+   // MuiPaper: {
+   //    styleOverrides: {
+   //       root: {
+   //          "&:hover": {scale: "1.05"}
+   //       }
+   //    }
+   // }
   }
 });
 

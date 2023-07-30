@@ -106,5 +106,40 @@
         "passingYear": "In Progress",
         "faculty": "Have Been an active learner of web development since couple of years"
     }
+],
+"Projects": [
+    {
+        "ProjectTitle": "In Store Ordering (Native)",
+        "Frameworks": "React Native (Expo), Material UI, React Query, Formik, Yup, NodeJS, ExpressJS, JQT, Multer, MySQL",
+        "Details": "Key features of this app includes POS, Dine in Ordering and Kitchen Display System. The vision behind this app was to develop an application for small scale restaurants where they can record and analyze their sales and to ease flow of information from waiters, counters to the kitchen for better managment and ensuring the minimal initial investment. This application is being developed on React Native (Expo), Express JS for rest API where as MYSQL is being used for data management. Users can login on the application with their email and password. Consideriing the security of the user hashed passwords have been stored in the database. To keep the API routes secure 'Middlewares' are used for Authentication and Authorization based on issued JWT before processing the client request. Different forms are available for adding items, item categories, adding customers ect. Forms are being validated through formik before processing and error messages (if any) are displayed with the help of YUP",
+        "GithupLink": "",
+        "pictures": [{
+            "img": "/../public/InStoreOrderApp/InStoreOrderAppLogin.png",
+            "title": "instoreorder",
+            "rows": 1,
+            "cols": 1
+        }]
+    },
+    {
+        "ProjectTitle": "My Blogs (Web)",
+        "Frameworks": "ReactJS, React Router, NodeJS, ExpressJS, MongoDB, Mongoose, Firebase",
+        "Details": "This is a small blogging application which is being developed on MERN stack. Only admin is allowed to post blogs where as users can interact in form of commnets and upvoting provided that they are registered users. Different forms are available and for login and signup which are managed through Firebase. In order track comments and upvotes on individual blog mongoDb is being utilized",
+        "GithupLink": "",
+        "pictures": []
+    },
+    {
+        "ProjectTitle": "Portfolio (Web)",
+        "Frameworks": "NextJS, Material UI",
+        "Details": "This is the project which you are viewing on your browser at the moment. It is being developed on NextJS. In order to give elegant look Material UI has been used to fullfill the purpose. However few modifications have also been done. Layout is responsive which suits for all sized devices",
+        "GithupLink": "",
+        "pictures": []
+    },
+    {
+        "ProjectTitle": "Mini Point of Sale (Web)",
+        "Frameworks": "ReactJS, Bootstrap, NodeJS, ExpressJS, SQLite",
+        "Details": "This is a web application, developed on ReactJS for front end whereas Back End is developed on NodeJS. Rest API have been created on ExpressJS. In order of give frist hand knowledge of daily sales and sales trend in last 12 months, dashboard is available for the mentioned purpose. Mover 3 different forms are available for adding items, category and customer. Layout is responsive to give elegant look on all divices",
+        "GithupLink": "",
+        "pictures": []
+    }
 ]
 }
