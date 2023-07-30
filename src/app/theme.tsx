@@ -12,8 +12,28 @@ const theme = createTheme({
      },
      secondary: {
         main: '#ffffff',
+     },
+     success: {
+         main: '#ff9800'
      }
   },
+  components: {
+   MuiDivider: {
+      styleOverrides: {
+         root: {
+            marginTop: "10px",
+            marginBottom: "10px",
+         }
+      }
+   },
+   MuiTypography: {
+      styleOverrides: {
+         root: {
+            textAlign: "justify",
+         }
+      }
+   }
+  }
 });
 
 // theme.typography.h3 = {

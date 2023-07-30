@@ -74,5 +74,37 @@
             }
         ]
     }
+],
+"Education": [
+    {
+        "title": "Masters of Engineering Management",
+        "institute": "NED University",
+        "passingYear": "2019-2021",
+        "faculty": "Supply Chain"
+    },
+    {
+        "title": "Bachelors of Engineering",
+        "institute": "NED University",
+        "passingYear": "2008-2012",
+        "faculty": "Industrial Engineering"
+    },
+    {
+        "title": "Web Development",
+        "institute": "National Freelancer Training Program",
+        "passingYear": "2021",
+        "faculty": "HTML, CSS, JS, ReactJS"
+    },
+    {
+        "title": "Full Stack Development",
+        "institute": "Codeacademy",
+        "passingYear": "2018",
+        "faculty": "HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, SQLite"
+    },
+    {
+        "title": "Web Development",
+        "institute": "Youtube, Linkedin Learning, Pluralsight",
+        "passingYear": "In Progress",
+        "faculty": "Have Been an active learner of web development since couple of years"
+    }
 ]
 }

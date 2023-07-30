@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography/Typography"
-import { Box, Grid, Button } from '@mui/material';
+import { Box, Grid, Button, Container } from '@mui/material';
 import Image from 'next/image';
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
@@ -18,7 +18,7 @@ import CallIcon from '@mui/icons-material/Call';
 
 export default function Home() {
   return (
-    <Box sx={{ height: "100%", display: "flex", flexDirection: "row", padding: "10px"}}>
+    <Container maxWidth="lg" sx={{ height: "100%", display: "flex", flexDirection: "row", padding: "10px"}}>
       <Grid container alignItems="center" flexWrap="wrap-reverse" spacing={5}>
         <Grid item xs={12} md={6} style={{display: "flex", justifyContent: 'center'}}>
           <Box sx={{paddingLeft: {xs: "15px"}, paddingRight: {xs: "15px"}, maxWidth: "500px"}}>
@@ -32,7 +32,7 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} md={6} textAlign="center">
           <Image
-            src="/../public/IMG_20210816_130455.jpg"
+            src="/../public/muhammadNasir.jpg"
             width={350}
             height={350}
             alt="Picture of the author"
@@ -40,6 +40,7 @@ export default function Home() {
           />
         </Grid>
       </Grid>
-    </Box>
+
+    </Container>
   )
 }
