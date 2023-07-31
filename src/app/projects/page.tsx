@@ -58,7 +58,7 @@ export default function Projects() {
             <Typography variant="h5">Details:</Typography>
             <Typography variant="h6">{activeProject.Details}</Typography>
           </Grid>
-          <Grid sx={{ backgroundColor: "lightGray", padding: "5px" }}>
+          {/* <Grid sx={{ backgroundColor: "lightGray", padding: "5px" }}>
             <ImageList sx={{ width: "100%", height: "200px" }} variant="quilted" cols={10} rowHeight={200}>
               {activeProject.pictures.map((item) => (
                 <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
@@ -71,7 +71,7 @@ export default function Projects() {
                 </ImageListItem>
               ))}
             </ImageList>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
     </PageBody>
