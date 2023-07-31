@@ -11,7 +11,7 @@ export default function About() {
           <PageHeading>Who Am I?</PageHeading>
         </Grid>
         <Grid item container xs={12} flexGrow={1} sx={{ marginTop: "0px", maxWidth: { xs: "800px", md: "1200px" }, paddingTop: "15px" }} rowSpacing={10}>
-          <Typography variant="h6" sx={{textAlign: "justify"}}>
+          <Typography variant="body1" sx={{textAlign: "justify"}}>
             I am an Industrial engineering by profession and a Full Stack web developer by passion, I am also holding Master's degree in Supply Chain. Currently I am employed in leading automobile industry of Pakistan as an Procurement Engineer. My development journey began back in 2019, the "COVID" year. It brought many chaos all over the world but I took it as an opportunity to explore new things. Since then have been falling in love with the programming. Hence considering my passion and current boom in the tech industry, looking forward to pursue my career in the field of web development. 
             <br/><br/>
             I started my training from "CodeAcademy", a world recognized platform of tech learning. Subsequent to initial learning have been developing small and intermediate level projects based on self interest. But the journey of learning never comes to an end, hence continously exploring professional courses from online resources like "Linked In Learning", "Youtube", "Pluralsight" to keep updated with the latest industry trends and development.

@@ -7,9 +7,9 @@ const EducationCard = ({ data }: any) => {
                 {data.title}
             </Typography>
             <Divider />
-            <Typography variant='h6'><span style={{fontWeight: 'bold'}}>Institute:</span> {data.institute}</Typography>
-            <Typography variant='h6'><span style={{fontWeight: 'bold'}}>Passing Year:</span> {data.passingYear}</Typography>
-            <Typography variant='h6'><span style={{fontWeight: 'bold'}}>Courses:</span>  {data.faculty}</Typography>
+            <Typography variant='body1'><span style={{fontWeight: 'bold'}}>Institute:</span> {data.institute}</Typography>
+            <Typography variant='body1'><span style={{fontWeight: 'bold'}}>Passing Year:</span> {data.passingYear}</Typography>
+            <Typography variant='body1'><span style={{fontWeight: 'bold'}}>Courses:</span>  {data.faculty}</Typography>
         </Paper>
     )
 }

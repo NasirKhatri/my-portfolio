@@ -60,7 +60,7 @@ export default function DrawerAppBar(props: Props) {
             <Box sx={{ display: "flex", flexDirection: "column", py: "30px", px: "15px", backgroundColor: "primary.main" }}>
                 <Avatar>
                     <Image
-                        src="/../public/muhammadNasir.jpg"
+                        src="/static/muhammadNasir.jpg"
                         alt="my pic"
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

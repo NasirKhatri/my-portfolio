@@ -10,7 +10,7 @@ export default function Skills() {
     <PageBody>
       <Grid item xs={12} alignItems="center">
         <PageHeading>Skills Overview</PageHeading>
-        <Typography variant="h6" sx={{ maxWidth: "lg", textAlign: "justify", paddingTop: "15px", margin: "auto" }}>
+        <Typography variant="body1" sx={{ maxWidth: "lg", textAlign: "justify", paddingTop: "15px", margin: "auto" }}>
           I have more than two years experiene of building rich web and mobile applications. Below is my quick overview of my technical skills' set and tools which I use for development. Would like to hire or know more about me? please contact
         </Typography>
       </Grid>

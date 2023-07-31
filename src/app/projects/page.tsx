@@ -11,10 +11,10 @@ const ProjectsDetails = data.Projects;
 
 const ProjectList = ({ activeProject, setProject }: any) => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" }}>
       {
         ProjectsDetails.map((project) => (
-          <Paper onClick={() => setProject(project)} elevation={12} sx={{ padding: "10px", margin: "10px", cursor: "pointer", backgroundColor: activeProject.ProjectTitle === project.ProjectTitle ? (theme) => theme.palette.primary.main : "inherit", "&:hover": { scale: "1.05" } }}>
+          <Paper onClick={() => setProject(project)} elevation={12} sx={{padding: "10px", margin: "10px", cursor: "pointer", backgroundColor: activeProject.ProjectTitle === project.ProjectTitle ? (theme) => theme.palette.primary.main : "inherit", "&:hover": { scale: "1.05" } }}>
             <Typography variant="h6" sx={{ color: activeProject.ProjectTitle === project.ProjectTitle ? (theme) => "white" : "inherit" }}>
               {project.ProjectTitle}
             </Typography>
@@ -52,11 +52,11 @@ export default function Projects() {
           </Grid>
           <Grid sx={{ padding: "10px" }}>
             <Typography variant="h5">Languages / Frameworks:</Typography>
-            <Typography variant="h6">{activeProject.Frameworks}</Typography>
+            <Typography variant="body1">{activeProject.Frameworks}</Typography>
           </Grid>
           <Grid flexGrow={1} sx={{ padding: "10px" }}>
             <Typography variant="h5">Details:</Typography>
-            <Typography variant="h6">{activeProject.Details}</Typography>
+            <Typography variant="body1">{activeProject.Details}</Typography>
           </Grid>
           {/* <Grid sx={{ backgroundColor: "lightGray", padding: "5px" }}>
             <ImageList sx={{ width: "100%", height: "200px" }} variant="quilted" cols={10} rowHeight={200}>

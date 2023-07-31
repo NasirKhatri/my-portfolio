@@ -26,13 +26,13 @@ const theme = createTheme({
          }
       }
    },
-   MuiTypography: {
-      styleOverrides: {
-         root: {
-            textAlign: "justify",
-         }
-      }
-   },
+   // MuiTypography-body1: {
+   //    styleOverrides: {
+   //       root: {
+   //          textAlign: "justify",
+   //       }
+   //    }
+   // },
    // MuiPaper: {
    //    styleOverrides: {
    //       root: {
@@ -49,5 +49,7 @@ const theme = createTheme({
 //     },
 //     fontWeight: "bold"
 // }
+
+theme.typography.body1.textAlign = "justify";
 
 export default theme;

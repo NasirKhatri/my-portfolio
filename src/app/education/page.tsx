@@ -24,15 +24,15 @@ export default function Education() {
                 Linkedin Courses
             </Typography>
             <Divider />
-            <Typography variant='h6'>ReactJS Essential Training</Typography>
-            <Typography variant='h6'>From React to React Native</Typography>
-            <Typography variant='h6'>Learning NextJS</Typography>
-            <Typography variant='h6'>Learning Typescript</Typography>
-            <Typography variant='h6'>NodeJS Essential Training</Typography>
-            <Typography variant='h6'>ExpressJS Essential Training</Typography>
-            <Typography variant='h6'>NodeJS: Securing Web APIs</Typography>
-            <Typography variant='h6'>Data Modeling in MongoDB</Typography>
-            <Typography variant='h6'>Creating & Hosting Full Stack Site</Typography>
+            <Typography variant='body1'>ReactJS Essential Training</Typography>
+            <Typography variant='body1'>From React to React Native</Typography>
+            <Typography variant='body1'>Learning NextJS</Typography>
+            <Typography variant='body1'>Learning Typescript</Typography>
+            <Typography variant='body1'>NodeJS Essential Training</Typography>
+            <Typography variant='body1'>ExpressJS Essential Training</Typography>
+            <Typography variant='body1'>NodeJS: Securing Web APIs</Typography>
+            <Typography variant='body1'>Data Modeling in MongoDB</Typography>
+            <Typography variant='body1'>Creating & Hosting Full Stack Site</Typography>
         </Paper>
         </Grid>
         <Grid />
