@@ -37,6 +37,7 @@ export default function Home() {
             height={350}
             alt="Picture of the author"
             style={{borderRadius: "50px"}}
+            priority
           />
         </Grid>
       </Grid>

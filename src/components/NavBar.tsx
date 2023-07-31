@@ -61,6 +61,7 @@ export default function DrawerAppBar(props: Props) {
                         src="/../public/muhammadNasir.jpg"
                         alt="my pic"
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                 </Avatar>
                 <Typography variant="h5" sx={{ color: "white", fontWeight: "bold", mt: "15px" }}>
@@ -107,7 +108,7 @@ export default function DrawerAppBar(props: Props) {
                     </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
-                            <Tooltip title={item.title}>
+                            <Tooltip title={item.title} key={item.title}>
                                 <IconButton key={item.title} size='large' color='secondary' href={item.href}>
                                     {item.icon}
                                 </IconButton>
