@@ -10,7 +10,7 @@ export default function About() {
         <Grid item xs={12} alignItems="center">
           <PageHeading>Who Am I?</PageHeading>
         </Grid>
-        <Grid item container xs={12} flexGrow={1} sx={{ marginTop: "0px", maxWidth: { xs: "800px", md: "1200px" }, paddingTop: "15px" }} rowSpacing={10}>
+        <Grid item xs={12} flexGrow={1} sx={{ marginTop: "0px", paddingTop: "15px" }}>
           <Typography variant="body1" sx={{textAlign: "justify"}}>
             I am an Industrial engineer by profession and a full stack web developer by passion, I am also holding Master's degree in Supply Chain. Currently I am employed in leading automobile industry of Pakistan as an Procurement Engineer. My development journey began back in 2019, the "COVID" year. It brought many chaos all over the world but I took it as an opportunity to explore new things. Since then have been falling in love with the programming. Hence considering my passion and current boom in the tech industry, looking forward to pursue my career in the field of web development. 
             <br/><br/>

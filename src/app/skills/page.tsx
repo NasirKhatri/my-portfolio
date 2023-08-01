@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography/Typography"
-import { Box, Grid } from "@mui/material"
+import { Box, Container, Grid } from "@mui/material"
 import SkillCard from "@/components/SkillCard"
 import data from "../../data.json";
 import PageBody from "@/components/PageLayouts";
@@ -7,6 +7,7 @@ import PageHeading from "@/components/PageHeading";
 
 export default function Skills() {
   return (
+    <Container maxWidth="lg">
     <PageBody>
       <Grid item xs={12} alignItems="center">
         <PageHeading>Skills Overview</PageHeading>
@@ -26,5 +27,6 @@ export default function Skills() {
         </Grid>
       </Grid>
     </PageBody>
+    </Container>
   )
 }

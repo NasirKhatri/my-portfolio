@@ -12,10 +12,11 @@ import useWindowSize from "@/hooks/useWindowSize";
 export default function Home() {
   const size = useWindowSize();
   return (
-    <Container maxWidth="lg" sx={{ height: "100%", display: "flex", flexDirection: "row", padding: "10px" }}>
-      <Grid container alignItems="center" flexWrap="wrap-reverse" spacing={5}>
+    <Container maxWidth="lg" sx={{height: "100%"}}>
+    <Container maxWidth="lg" sx={{ height: "100%", display: "flex", flexDirection: "row"}}>
+      <Grid container alignItems="center" flexWrap="wrap-reverse">
         <Grid item xs={12} md={6} style={{ display: "flex", justifyContent: 'center' }}>
-          <Box sx={{ paddingLeft: { xs: "15px" }, paddingRight: { xs: "15px" }, maxWidth: "500px" }}>
+          <Box sx={{maxWidth: "500px" }}>
             <Typography variant="h3" color="primary.light">Hi!</Typography>
             <Typography variant="h3">I'm Nasir,</Typography>
             <Typography variant="h3">Full-Stack Developer</Typography>
@@ -46,6 +47,7 @@ export default function Home() {
         </Grid>
       </Grid>
 
+    </Container>
     </Container>
   )
 }
