@@ -6,3 +6,8 @@ body {
 .heading {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  
+  
+}
