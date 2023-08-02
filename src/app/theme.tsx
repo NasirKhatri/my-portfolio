@@ -4,8 +4,8 @@
 //   }),
 // );
 
-import { createTheme } from '@mui/material/styles';
-const theme = createTheme({
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+let theme = createTheme({
   palette: {
      primary: {
         main: '#1976d2',
@@ -26,30 +26,10 @@ const theme = createTheme({
          }
       }
    },
-   // MuiTypography-body1: {
-   //    styleOverrides: {
-   //       root: {
-   //          textAlign: "justify",
-   //       }
-   //    }
-   // },
-   // MuiPaper: {
-   //    styleOverrides: {
-   //       root: {
-   //          "&:hover": {scale: "1.05"}
-   //       }
-   //    }
-   // }
   }
 });
 
-// theme.typography.h3 = {
-//     [theme.breakpoints.down("sm")]: {
-//         fontSize: "32px"
-//     },
-//     fontWeight: "bold"
-// }
-
+theme = responsiveFontSizes(theme);
 theme.typography.body1.textAlign = "justify";
 
 export default theme;
