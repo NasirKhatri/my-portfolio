@@ -11,7 +11,7 @@ export default function Education() {
       <Grid item xs={12} alignItems="center">
         <PageHeading>Accedemic Backgroud</PageHeading>
       </Grid>
-      <Grid item container xs={12} flexGrow={1} sx={{ marginTop: "0px", maxWidth: { xs: "800px", md: "1200px" } }} rowSpacing={10}>
+      <Grid item container xs={12} flexGrow={1} sx={{ marginTop: "0px"}} rowSpacing={4}>
         {
           data.Education.map((item) => (
             <Grid item xs={12} md={6} lg={4} sx={{ display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "center" }}>

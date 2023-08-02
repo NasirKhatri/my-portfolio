@@ -2,7 +2,7 @@ import { Box, Grid } from "@mui/material"
 
 const PageBody = ({ children }: any) => {
     return(
-        <Box sx={{ height: "100%", display: "flex", maxWidth: "1200px", margin:"auto", flexDirection: "column", justifyContent: "center", padding: "15px", paddingTop: "50px", paddingBottom: {md: "60px"} }}>
+        <Box sx={{ height: "100%", display: "flex", margin:"auto", flexDirection: "column", justifyContent: "center", padding: "15px", paddingTop: "2rem", paddingBottom: {md: "60px"} }}>
             {...children}
         </Box>
     )
