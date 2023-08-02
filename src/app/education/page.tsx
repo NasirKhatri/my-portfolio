@@ -9,7 +9,7 @@ export default function Education() {
     <Container maxWidth="lg">
     <PageBody>
       <Grid item xs={12} alignItems="center">
-        <PageHeading>Accedemic Backgroud</PageHeading>
+        <PageHeading>Academic Backgroud</PageHeading>
       </Grid>
       <Grid item container xs={12} flexGrow={1} sx={{ marginTop: "0px"}} rowSpacing={4}>
         {
