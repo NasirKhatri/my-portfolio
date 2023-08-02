@@ -6,13 +6,14 @@ import Image from 'next/image';
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
 import useWindowSize from "@/hooks/useWindowSize";
+import image from "./../../public/static/muhammadNasir.jpg"
 
 
 
 export default function Home() {
   const size = useWindowSize();
   return (
-    <Container maxWidth="lg" sx={{height: "100%"}}>
+    <Container maxWidth="lg" sx={{height: "100%", paddingTop: "2rem", paddingBottom: "2rem"}}>
     <Container maxWidth="lg" sx={{ height: "100%", display: "flex", flexDirection: "row"}}>
       <Grid container alignItems="center" flexWrap="wrap-reverse">
         <Grid item xs={12} md={6} style={{ display: "flex", justifyContent: 'center' }}>
@@ -28,18 +29,18 @@ export default function Home() {
         <Grid item xs={12} md={6} textAlign="center">
           {
             size.width < 500 ? <Image
-              src="/static/muhammadNasir.jpg"
               width={225}
               height={225}
               alt="Picture of the author"
               style={{ borderRadius: "50px" }}
+              src={image}
               priority
             /> : <Image
-              src="/static/muhammadNasir.jpg"
               width={350}
               height={350}
               alt="Picture of the author"
               style={{ borderRadius: "50px" }}
+              src={image}
               priority
             />
           }

@@ -1,5 +1,5 @@
 "use client"
-import { Grid, Typography, Divider, Box, List, ListItem, ListItemButton, ListItemText, ButtonGroup, Button, Paper, ImageList, ImageListItem } from "@mui/material"
+import { Grid, Typography, Divider, Box, List, ListItem, ListItemButton, ListItemText, ButtonGroup, Button, Paper, ImageList, ImageListItem, Container } from "@mui/material"
 import data from "../../data.json";
 import PageBody from "@/components/PageLayouts";
 import PageHeading from "@/components/PageHeading";
@@ -41,6 +41,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 export default function Projects() {
   const [activeProject, setProject] = useState(ProjectsDetails[0])
   return (
+    <Container maxWidth="lg">
     <PageBody>
       <Grid item xs={12} alignItems="center">
         <PageHeading>Projects</PageHeading>
@@ -50,11 +51,11 @@ export default function Projects() {
           <Grid sx={{ padding: "10px" }}>
             <ProjectList activeProject={activeProject} setProject={setProject} />
           </Grid>
-          <Grid sx={{ padding: "10px" }}>
+          <Grid>
             <Typography variant="h5">Languages / Frameworks:</Typography>
             <Typography variant="body1">{activeProject.Frameworks}</Typography>
           </Grid>
-          <Grid flexGrow={1} sx={{ padding: "10px" }}>
+          <Grid flexGrow={1}>
             <Typography variant="h5">Details:</Typography>
             <Typography variant="body1">{activeProject.Details}</Typography>
           </Grid>
@@ -75,6 +76,7 @@ export default function Projects() {
         </Grid>
       </Grid>
     </PageBody>
+    </Container>
   )
 }
 

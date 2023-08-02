@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography, Divider } from "@mui/material"
+import { Grid, Paper, Typography, Divider, Container } from "@mui/material"
 import data from "../../data.json";
 import PageBody from "@/components/PageLayouts";
 import PageHeading from "@/components/PageHeading";
@@ -6,6 +6,7 @@ import EducationCard from "@/components/EducationCard";
 
 export default function Education() {
   return (
+    <Container maxWidth="lg">
     <PageBody>
       <Grid item xs={12} alignItems="center">
         <PageHeading>Accedemic Backgroud</PageHeading>
@@ -38,5 +39,6 @@ export default function Education() {
         <Grid />
       </Grid>
     </PageBody>
+    </Container>
   )
 }
