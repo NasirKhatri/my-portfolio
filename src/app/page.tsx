@@ -19,7 +19,7 @@ export default function Home() {
               <Typography variant="h3" color="primary.light">Hi!</Typography>
               <Typography variant="h3">I'm Nasir,</Typography>
               <Typography variant="h3">Full-Stack Developer</Typography>
-              <Typography variant="body1" sx={{ marginTop: "25px", marginBottom: "25px", textAlign: "justify" }}>I am a MERN Stack Developer, I work with ReactJS, React Native, NextJS, NodeJS, ExpressJS, MongoDB etc to develop web and mobile applications. Also carrying experience to work with third party libraries like MUI, Formik, Yup, Mongoose and many more. </Typography>
+              <Typography variant="body1" sx={{ marginTop: {xs: "15px", sm:"25px"}, marginBottom:  {xs: "15px", sm:"25px"}, textAlign: "justify" }}>I am a MERN Stack Developer, I work with ReactJS, React Native, NextJS, NodeJS, ExpressJS, MongoDB etc to develop web and mobile applications. Also carrying experience to work with third party libraries like MUI, Formik, Yup, Mongoose and many more. </Typography>
               <a href="/static/MuhammadNasir.pdf" download><Button variant="outlined" startIcon={<DownloadIcon />} sx={{ marginRight: "10px" }}>Resume</Button></a>
               <Button variant="contained" startIcon={<CallIcon />} href="/contact">Contact</Button>
             </Box>
