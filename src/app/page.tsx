@@ -27,14 +27,14 @@ export default function Home() {
           <Grid item xs={12} md={6} textAlign="center">
             {
               size.width < 500 ?
-                <div style={{ width: "225px", height: "225px", margin: "auto" }}>
+                <div style={{ width: "190px", height: "190px", margin: "auto" }}>
                   <Image
                     alt="author"
                     src={image}
-                    width={225}
-                    height={225}
+                    width={190}
+                    height={190}
                     objectFit="cover"
-                    style={{ borderRadius: "112.5px" }}
+                    style={{ borderRadius: "95px" }}
                   />
                 </div>
                 : <></>}
