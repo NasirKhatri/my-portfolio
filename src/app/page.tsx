@@ -11,7 +11,7 @@ import image from "./../../public/static/muhammadNasir.jpg"
 export default function Home() {
   const size = useWindowSize();
   return (
-    <Container maxWidth="lg" sx={{ height: "100%", paddingTop: "2rem", paddingBottom: "2rem" }}>
+    <Container maxWidth="lg" sx={{ height: "100%", paddingTop: {xs: "1rem", sm:"2rem"}, paddingBottom: {xs: "1rem", sm:"2rem"} }}>
       <Container maxWidth="lg" sx={{ height: "100%", display: "flex", flexDirection: "row" }}>
         <Grid container alignItems="center" flexWrap="wrap-reverse">
           <Grid item xs={12} md={6} style={{ display: "flex", justifyContent: 'center' }}>
@@ -19,7 +19,7 @@ export default function Home() {
               <Typography variant="h3" color="primary.light">Hi!</Typography>
               <Typography variant="h3">I'm Nasir,</Typography>
               <Typography variant="h3">Full-Stack Developer</Typography>
-              <Typography variant="body1" sx={{ marginTop: {xs: "15px", sm:"25px"}, marginBottom:  {xs: "15px", sm:"25px"}, textAlign: "justify" }}>I am a MERN Stack Developer, I work with ReactJS, React Native, NextJS, NodeJS, ExpressJS, MongoDB etc to develop web and mobile applications. Also carrying experience to work with third party libraries like MUI, Formik, Yup, Mongoose and many more. </Typography>
+              <Typography variant="body1" sx={{ marginTop: {xs: "10px", sm:"25px"}, marginBottom:  {xs: "15px", sm:"25px"}, textAlign: "justify" }}>I am a MERN Stack Developer, I work with ReactJS, React Native, NextJS, NodeJS, ExpressJS, MongoDB etc to develop web and mobile applications. Also carrying experience to work with third party libraries like MUI, Formik, Yup, Mongoose and many more. </Typography>
               <a href="/static/MuhammadNasir.pdf" download><Button variant="outlined" startIcon={<DownloadIcon />} sx={{ marginRight: "10px" }}>Resume</Button></a>
               <Button variant="contained" startIcon={<CallIcon />} href="/contact">Contact</Button>
             </Box>
