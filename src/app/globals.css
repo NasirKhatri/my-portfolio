@@ -11,3 +11,13 @@ body {
   
   
 }
+
+@keyframes fadein {
+  from {scale: 0.7; opacity: 0.7;}
+  to {scale: 1; opacity: 1;}
+}
+
+.fadein {
+  animation-name: fadein;
+  animation-duration: 2s;
+}

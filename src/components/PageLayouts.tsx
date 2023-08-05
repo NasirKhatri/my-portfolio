@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material"
+import { Box} from "@mui/material"
 
 const PageBody = ({ children }: any) => {
     return(

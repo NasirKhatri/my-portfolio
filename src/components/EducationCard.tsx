@@ -2,7 +2,7 @@ import { Divider, Paper, Typography } from '@mui/material';
 
 const EducationCard = ({ data }: any) => {
     return (
-        <Paper elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
+        <Paper className='fadein' elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
             <Typography variant='h5' sx={{ textAlign: 'center', color: "primary.light", fontWeight: "bold" }}>
                 {data.title}
             </Typography>

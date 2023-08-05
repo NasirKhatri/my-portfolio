@@ -20,7 +20,7 @@ export default function Education() {
           ))
         }
         <Grid item xs={12} md={6} lg={4} sx={{ display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "center" }}>
-        <Paper elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
+        <Paper className="fadein" elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
             <Typography variant='h5' sx={{ textAlign: 'center', color: "primary.light", fontWeight: "bold" }}>
                 Linkedin Courses
             </Typography>
