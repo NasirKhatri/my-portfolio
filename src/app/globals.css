@@ -29,3 +29,30 @@ body {
   animation-name: fadein;
   animation-duration: 2s;
 }
+
+@keyframes viewIn {
+  from {opacity: 0; scale: 0.7;}
+  to {opacity: 1; scale: 1;}
+}
+
+@keyframes viewOut {
+  from {opacity: 1; scale: 1;}
+  to {opacity: 0; scale: 0.7;}
+}
+
+.opacityTransition {
+  opacity: 0;
+  scale: 0;
+}
+
+.opacity-1 {
+  animation-name: viewIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.opacity-0 {
+  animation-name: viewOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}

@@ -1,10 +1,16 @@
+"use client"
 import { Grid, Paper, Typography, Divider, Container } from "@mui/material"
 import data from "../../data.json";
 import PageBody from "@/components/PageLayouts";
 import PageHeading from "@/components/PageHeading";
 import EducationCard from "@/components/EducationCard";
+import { useInView } from "react-intersection-observer";
 
 export default function Education() {
+  const { ref, inView } = useInView({
+    initialInView: true,
+    threshold: 0.40,
+});
   return (
     <Container maxWidth="lg">
     <PageBody>
@@ -20,7 +26,7 @@ export default function Education() {
           ))
         }
         <Grid item xs={12} md={6} lg={4} sx={{ display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "center" }}>
-        <Paper className="fadein" elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
+        <Paper ref={ref} className={`opacityTransition ${inView ? 'opacity-1' : 'opacity-0'}`} elevation={12} sx={{ width: "350px", borderRadius: "6px", padding: "15px", "&:hover": {scale: "1.05"}}}>
             <Typography variant='h5' sx={{ textAlign: 'center', color: "primary.light", fontWeight: "bold" }}>
                 Linkedin Courses
             </Typography>
