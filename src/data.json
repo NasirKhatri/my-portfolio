@@ -15,6 +15,12 @@
                 "Level": 3.5
             },
             {
+                "name": "Angular",
+                "experience": "Oct'23 - Present",
+                "Projects": "1 Project",
+                "Level": 3
+            },
+            {
                 "name": "NextJS",
                 "experience": "4 Months",
                 "Projects": "1 Project",
@@ -54,6 +60,12 @@
     {
         "scope": "Libraries",
         "languages": [
+            {
+                "name": "RxJS",
+                "experience": "Oct'23 - Present",
+                "Projects": "1 Projects",
+                "Level": 2.5
+            },
             {
                 "name": "Material UI",
                 "experience": "1 Year",
@@ -109,8 +121,16 @@
 ],
 "Projects": [
     {
+        "ProjectTitle": "Issuance and Receiving Tracking of Health Care Equipments",
+        "Frameworks": "NextJS (Frontend, Backend both), MondgoDB, Mongoose, react-to-print, Material UI",
+        "Details": "This project was done for an NGO name Zakwan health care, which provides health related equipments like wheel chair, patient beds etc to the patients after taking security deposit. This application help NGO to track issued equipments, due data, recieving and in hand inventory. This application provided saperate forms to create or edit patient, users, equipment and equipment types details. Application allow user to analyze reports of all master data and also history of Issuance & Receiving and if required; user can also export data to CSV files. This application also features, system generated reciepts. Only authorized user(s) can login and access the application and authentication is being done through JWT it is also noteworthy that password hash (using bcrypt) have been saved in the database instead of password itself.",
+        "URL": "https://ngo-welfare.vercel.app/",
+        "GithupLink": "",
+        "pictures": [{}]
+    },
+    {
         "ProjectTitle": "In Store Ordering (Native)",
-        "Frameworks": "React Native (Expo), Material UI, React Query, Formik, Yup, NodeJS, ExpressJS, JQT, Multer, MySQL",
+        "Frameworks": "React Native (Expo), Material UI, React Query, Formik, Yup, NodeJS, ExpressJS, JWT, Multer, MySQL",
         "Details": "Key features of this app includes POS, Dine in Ordering and Kitchen Display System. The vision behind this app was to develop an application for small scale restaurants where they can record and analyze their sales and to ease flow of information from waiters, counters to the kitchen for better managment and ensuring the minimal initial investment. This application is being developed on React Native (Expo), Express JS for rest API where as MYSQL is being used for data management. Users can login on the application with their email and password. Consideriing the security of the user hashed passwords have been stored in the database. To keep the API routes secure 'Middlewares' are used for Authentication and Authorization based on issued JWT before processing the client request. Different forms are available for adding items, item categories, adding customers ect. Forms are being validated through formik before processing and error messages (if any) are displayed with the help of YUP",
         "GithupLink": "",
         "pictures": [{

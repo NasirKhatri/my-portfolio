@@ -11,6 +11,16 @@ export default function Experience() {
           <PageHeading>Experience</PageHeading>
         </Grid>
         <Grid item xs={12} flexGrow={1} sx={{ marginTop: "0px", maxWidth: { xs: "800px", md: "1200px" }, paddingTop: "15px" }} rowSpacing={10}>
+        <>
+            <Typography variant="h4" className="heading">Front End Development - Angular</Typography>
+            <Typography variant="h5" className="heading">From Oct'2023 To Present</Typography>
+            <Typography variant="body1" sx={{ textAlign: "justify" }}>Veeone Health is a US Based product company. Specializing in innovative healthcare solution.
+            <br></br>
+            As a angular developer, I am responsible for creating and implementing reusable angular components from scratch Diagnosing and resolving bugs to ensure seamless user experience Collaborating with cross-functional teams to develop user-friendly interfaces that align with business objectives.
+            <br></br>
+            Libraries and Frameworks: Angular, RxJS, Angular Material, Bootstrap, Azure, Git, GitHub, Visual Studio Code</Typography>
+            <Divider/>
+          </>
           <>
             <Typography variant="h4" className="heading">Front End Development (Freelancing)</Typography>
             <Typography variant="h5" className="heading">From Jan'2021 To Dec'2021</Typography>
@@ -25,7 +35,7 @@ export default function Experience() {
           <Divider />
           </>
           <Typography variant="h4" className="heading">Deputy Manager - Procurement</Typography>
-          <Typography variant="h5" className="heading">Pak Suzuki Motors, From Sep'13 To Present</Typography>
+          <Typography variant="h5" className="heading">Pak Suzuki Motors, From Sep'13 To Sep'23</Typography>
           <Typography variant="body1">Purchasing direct materials from more than 20 local suppliers to meet daily production requirements. Monitor items’ inventory level to avoid capital blockage and also avoid risk of production stoppage. Evaluate vendors’ monthly performance and take countermeasures if required. Negotiation for Product Localization. Issuance of RFQs to the potential vendors. In order to promote procurement at competitive prices, “Assess Parts’ and Investment Cost” before negotiation. Conduct feasibility study for product localization. Issue letter of Intent to vendors in case localization is feasible. Negotiate with Foreign tool makers in case of imported tooling. Periodic review of negotiated prices based on exchange rate and other costing factors.</Typography>
 
         </Grid>

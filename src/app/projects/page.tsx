@@ -4,6 +4,7 @@ import data from "../../data.json";
 import PageBody from "@/components/PageLayouts";
 import PageHeading from "@/components/PageHeading";
 import { useState } from "react";
+import Link from "next/link";
 
 const ProjectsDetails = data.Projects;
 
@@ -51,6 +52,18 @@ export default function Projects() {
             <Typography variant="h5">Details:</Typography>
             <Typography variant="body1">{project[0].Details}</Typography>
           </Grid>
+          {
+            project[0].URL ?
+            <Grid flexGrow={1}  sx={{marginTop: "10px"}}>
+            <Typography variant="h5">URL:</Typography>
+            <Typography variant="body1">
+              <Link href={project[0].URL} target="blank">
+                {project[0].URL}
+              </Link>
+            </Typography>
+          </Grid> :
+          <></>
+          }
         </Grid>
       </Grid>
     </PageBody>
